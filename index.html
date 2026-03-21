@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hello Beauticians - Premium home salon services exclusively for women in Pune. Professional hair, skin, bridal, nails & mehendi services at your doorstep.">
+    <title>Hello Beauticians | Premium Home Salon for Women</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <div class="logo-circle"><img src="gallery/logo.jpg" alt="Hello Beauticians Logo"></div>
+            </div>
+            <button class="mobile-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#" data-page="home" class="active-nav">Home</a></li>
+                    <li><a href="#" data-page="services">Services</a></li>
+                    <li><a href="#" data-page="packages">Packages</a></li>
+                    <li><a href="#" data-page="gallery">Gallery</a></li>
+                    <li><a href="#" data-page="testimonials">Testimonials</a></li>
+                    <li><a href="#" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+        <div class="hero-slider" id="heroSlider">
+            <div class="slide active"
+                style="background-image: url('https://images.pexels.com/photos/3992873/pexels-photo-3992873.jpeg?auto=compress&cs=tinysrgb&w=1200');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Luxury Salon Experience<br>at Your Doorstep</h1>
+                    <p>Professional, hygienic beauty services exclusively for women. Trained experts bring the salon to
+                        you.</p>
+                    <a href="#" data-page="contact" class="btn">Book Appointment →</a>
+                </div>
+            </div>
+            <div class="slide"
+                style="background-image: url('https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1200');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Expert Hair & Skin Care</h1>
+                    <p>From haircuts to bridal facials, our experts deliver premium results in the comfort of your home.
+                    </p>
+                    <a href="#" data-page="services" class="btn">Explore Services →</a>
+                </div>
+            </div>
+            <div class="slider-arrow prev" id="prevSlide"><i class="fas fa-chevron-left"></i></div>
+            <div class="slider-arrow next" id="nextSlide"><i class="fas fa-chevron-right"></i></div>
+            <div class="slider-nav" id="sliderDots"></div>
+        </div>
+
+        <div class="container container1">
+            <div class="section-title reveal">
+                <h2>Why Hello Beauticians?</h2>
+                <p>Convenience, trust, and excellence — delivered to your home</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-home"></i></div>
+                    <h3>Doorstep Service</h3>
+                    <p>Expert beauticians arrive with all professional tools at your preferred time.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-female"></i></div>
+                    <h3>Women Only</h3>
+                    <p>100% female staff — safe, comfortable, and private experience.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <h3>Hygiene First</h3>
+                    <p>Sterilized equipment, disposable kits, and premium sanitization.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                    <h3>Skilled Experts</h3>
+                    <p>Trained & verified beauticians with years of experience.</p>
+                </div>
+            </div>
+            <div class="offer-banner reveal">
+                <h2>🔥 BUY 2 GET 2 FREE 🔥</h2>
+                <p>Valid Monday to Friday | Limited Period Offer</p>
+            </div>
+
+            <div class="popular-services-section">
+                <div class="section-title reveal">
+                    <h2>Popular Services</h2>
+                    <p>Most loved treatments by our clients</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="service-img"><img
+                                src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Hair"></div>
+                        <div class="service-content">
+                            <h3>Hair Styling</h3>
+                            <p>Haircuts, styling, hair spa & more at home.</p>
+                            <div class="price-tag">Starting ₹349</div>
+                        </div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-img"><img
+                                src="https://images.pexels.com/photos/4065390/pexels-photo-4065390.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Skin"></div>
+                        <div class="service-content">
+                            <h3>Skin & Facial</h3>
+                            <p>Hydra facial, glow treatments, de-tan.</p>
+                            <div class="price-tag">Starting ₹599</div>
+                        </div>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-img"><img
+                                src="https://images.pexels.com/photos/3783042/pexels-photo-3783042.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Bridal"></div>
+                        <div class="service-content">
+                            <h3>Bridal Makeup</h3>
+                            <p>Complete bridal packages by experts.</p>
+                            <div class="price-tag">Customizable</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all-wrapper"><a href="#" data-page="packages" class="btn-outline btn">View All Packages
+                        →</a></div>
+            </div>
+
+            <!-- HOME GALLERY -->
+            <div class="home-gallery-section">
+                <div class="section-title reveal">
+                    <h2>Our Work Gallery</h2>
+                    <p>Real results from our expert beauticians</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img
+                            src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg"
+                            alt="Hair styling work"></div>
+                    <div class="gallery-item"><img
+                            src="https://images.pexels.com/photos/3807737/pexels-photo-3807737.jpeg" alt="Makeup work">
+                    </div>
+                    <div class="gallery-item"><img
+                            src="https://images.pexels.com/photos/4813221/pexels-photo-4813221.jpeg"
+                            alt="Nail art work"></div>
+                </div>
+
+                <div class="view-full-gallery"><a href="#" data-page="gallery" class="btn-outline btn">View Full Gallery
+                        →</a></div>
+            </div>
+
+            <!-- Testimonials Section on Home Page -->
+            <div class="home-testimonials-section">
+                <div class="section-title reveal">
+                    <h2>Client Love</h2>
+                    <p>What our beautiful clients say about us</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card reveal">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"The bridal makeup was absolutely stunning! The beautician was professional and made me feel
+                            so
+                            comfortable. Highly recommend Hello Beauticians!"</p>
+                        <h4>– Sneha Patil</h4>
+                    </div>
+                    <div class="testimonial-card reveal">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Hair spa at home was amazing. They used premium products and were very hygienic. My hair
+                            feels
+                            so
+                            soft now!"</p>
+                        <h4>– Riya Deshmukh</h4>
+                    </div>
+                    <div class="testimonial-card reveal">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>"Best decision to book for my wedding mehendi. Beautiful designs and organic henna. Thank you
+                            Hello
+                            Beauticians!"</p>
+                        <h4>– Anjali K.</h4>
+                    </div>
+                </div>
+                <div class="read-more-reviews"><a href="#" data-page="testimonials" class="btn-outline btn">Read More
+                        Reviews →</a></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ENHANCED SERVICES PAGE with Images & Details -->
+    <section id="services" class="page">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Our Premium Services</h2>
+                <p>Professional beauty treatments at your doorstep with expert care</p>
+            </div>
+
+            <!-- SERVICE FILTER -->
+            <div class="gallery-filter reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hair">Hair</button>
+                <button class="filter-btn" data-filter="skin">Skin</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="nails">Nails</button>
+            </div>
+
+            <!-- Hair Services Category -->
+            <!-- <h3 class="category-title reveal"><i class="fas fa-cut"></i> Hair Services</h3> -->
+            <div class="services-grid">
+                <div class="service-card reveal" data-category="hair">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Haircut & Styling">
+                        <div class="service-category-badge">Popular</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Haircut & Styling</h3>
+                        <p class="service-description">Professional haircut, blow-dry, and styling by expert
+                            beauticians. Perfect for any occasion.</p>
+                        <div class="service-features"><span>✂️ Precision Cut</span><span>💨 Blow-dry</span><span>✨
+                                Styling</span></div>
+                        <div class="price-tag">Starting ₹349</div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal" data-category="hair">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/3992860/pexels-photo-3992860.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Hair Color">
+                        <div class="service-category-badge">Trending</div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Hair Color & Highlights</h3>
+                        <p class="service-description">Ammonia-free colors, global coloring, highlights, and root
+                            touch-up. Premium brands used.</p>
+                        <div class="service-features"><span>🎨 Global Color</span><span>✨ Highlights</span><span>🌿
+                                Ammonia Free</span></div>
+                        <div class="price-tag">Starting ₹1499</div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal" data-category="hair">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/3992866/pexels-photo-3992866.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Hair Spa"></div>
+                    <div class="service-content">
+                        <h3>Hair Spa & Treatment</h3>
+                        <p class="service-description">Deep conditioning, hair spa, keratin, smoothening, and
+                            nanoplastia treatments.</p>
+                        <div class="service-features"><span>💆‍♀️ Deep Conditioning</span><span>✨ Keratin</span><span>💎
+                                Smoothening</span></div>
+                        <div class="price-tag">Starting ₹2599</div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skin & Facial Category -->
+            <!-- <h3 class="category-title reveal"><i class="fas fa-smile"></i> Skin & Facial Treatments</h3> -->
+            <div class="services-grid">
+                <div class="service-card reveal" data-category="skin">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/4065390/pexels-photo-4065390.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Hydra Facial"></div>
+                    <div class="service-content">
+                        <h3>Hydra Facial</h3>
+                        <p class="service-description">Deep cleansing, exfoliation, extraction, and hydration. Instant
+                            glowing skin.</p>
+                        <div class="service-features"><span>💧 Deep Hydration</span><span>✨ Instant
+                                Glow</span><span>🧖‍♀️ Painless</span></div>
+                        <div class="price-tag">₹1999</div><a href="#" data-page="contact" class="service-book-btn">Book
+                            Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal" data-category="skin">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/3997836/pexels-photo-3997836.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="O3 Facial"></div>
+                    <div class="service-content">
+                        <h3>O3+ Oxygen Facial</h3>
+                        <p class="service-description">Oxygen infusion, brightening, and anti-aging treatment. Perfect
+                            for dull skin.</p>
+                        <div class="service-features"><span>💨 Oxygen Infusion</span><span>🌟
+                                Brightening</span><span>🕊️ Anti-Aging</span></div>
+                        <div class="price-tag">₹1699</div><a href="#" data-page="contact" class="service-book-btn">Book
+                            Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal" data-category="skin">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/3992120/pexels-photo-3992120.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Gold Facial"></div>
+                    <div class="service-content">
+                        <h3>Gold & Wine Facial</h3>
+                        <p class="service-description">Luxury facials with natural ingredients for radiant, youthful
+                            skin.</p>
+                        <div class="service-features"><span>✨ Gold Facial</span><span>🍷 Wine Facial</span><span>🌸
+                                Lotus Gold</span></div>
+                        <div class="price-tag">Starting ₹899</div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bridal & Makeup Category -->
+            <!-- <h3 class="category-title reveal"><i class="fas fa-ring"></i> Bridal & Makeup Services</h3> -->
+            <div class="services-grid">
+                <div class="service-card reveal" data-category="bridal">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/3807737/pexels-photo-3807737.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Bridal Makeup"></div>
+                    <div class="service-content">
+                        <h3>Bridal Makeup</h3>
+                        <p class="service-description">Complete bridal transformation with HD/airbrush makeup, draping,
+                            and trial session.</p>
+                        <div class="service-features"><span>👰 HD Makeup</span><span>💨 Airbrush</span><span>📸 Photo
+                                Ready</span></div>
+                        <div class="price-tag">Customizable</div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Consultation →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal" data-category="bridal">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/3992128/pexels-photo-3992128.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Party Makeup"></div>
+                    <div class="service-content">
+                        <h3>Party & Occasion Makeup</h3>
+                        <p class="service-description">Glamorous makeup for engagements, receptions, and special events.
+                        </p>
+                        <div class="service-features"><span>✨ Glam Look</span><span>💄 Professional</span><span>🎭
+                                Custom Style</span></div>
+                        <div class="price-tag">Starting ₹1999</div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal" data-category="bridal">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/4931964/pexels-photo-4931964.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Mehendi"></div>
+                    <div class="service-content">
+                        <h3>Bridal Mehendi</h3>
+                        <p class="service-description">Traditional Arabic & bridal mehendi designs with organic henna.
+                        </p>
+                        <div class="service-features"><span>🌿 Organic Henna</span><span>🎨 Arabic Design</span><span>👰
+                                Bridal Special</span></div>
+                        <div class="price-tag">Starting ₹1999</div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nails & Waxing Category -->
+            <!-- <h3 class="category-title reveal"><i class="fas fa-hand-peace"></i> Nails & Waxing Services</h3> -->
+            <div class="services-grid">
+                <div class="service-card reveal" data-category="nails">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/4813221/pexels-photo-4813221.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Manicure Pedicure"></div>
+                    <div class="service-content">
+                        <h3>Manicure & Pedicure</h3>
+                        <p class="service-description">Luxury hand and foot care with massage, cuticle treatment, and
+                            nail shaping.</p>
+                        <div class="service-features"><span>💅 Spa Manicure</span><span>🦶 Pedicure</span><span>✨
+                                Paraffin Wax</span></div>
+                        <div class="price-tag">Starting ₹499</div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal" data-category="nails">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/3783013/pexels-photo-3783013.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Waxing"></div>
+                    <div class="service-content">
+                        <h3>Waxing Services</h3>
+                        <p class="service-description">Full body waxing, facial waxing, and bikini wax with premium wax.
+                        </p>
+                        <div class="service-features"><span>🧴 Full Body</span><span>🌸 Facial Waxing</span><span>✨
+                                Premium Wax</span></div>
+                        <div class="price-tag">Starting ₹399</div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal" data-category="nails">
+                    <div class="service-img"><img
+                            src="https://images.pexels.com/photos/3783012/pexels-photo-3783012.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Nail Art"></div>
+                    <div class="service-content">
+                        <h3>Nail Art & Extensions</h3>
+                        <p class="service-description">Gel extensions, nail art, and French tips for beautiful hands.
+                        </p>
+                        <div class="service-features"><span>💅 Gel Extensions</span><span>🎨 Nail Art</span><span>✨
+                                French Tips</span></div>
+                        <div class="price-tag">Starting ₹299</div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-combo-packages"><a href="#" data-page="packages" class="btn">View Combo Packages →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES PAGE -->
+    <section id="packages" class="page">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Exclusive Packages</h2>
+                <p>Best value deals for complete pampering</p>
+            </div>
+            <div class="offer-banner reveal">
+                <h2>🔥 BUY 2 GET 2 FREE 🔥</h2>
+                <p>Monday to Friday Only | Choose any 4 services, pay for 2</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-content">
+                        <h3>Value Package</h3>
+                        <div class="price-tag">₹799</div>
+                        <p>Any 3 Services</p>
+                        <div class="service-features"><span>Hair</span><span>Facial</span><span>Waxing</span></div><a
+                            href="#" data-page="contact" class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-content">
+                        <h3>Silver Package</h3>
+                        <div class="price-tag">₹1099</div>
+                        <p>Any 4 Services</p>
+                        <div class="service-features"><span>Includes Premium</span></div><a href="#" data-page="contact"
+                            class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-content">
+                        <h3>Gold Package</h3>
+                        <div class="price-tag">₹1599</div>
+                        <p>Any 5 Services</p>
+                        <div class="service-features"><span>Best for Makeover</span></div><a href="#"
+                            data-page="contact" class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-content">
+                        <h3>Platinum Package</h3>
+                        <div class="price-tag">₹2099</div>
+                        <p>All Services Included</p>
+                        <div class="service-features"><span>Complete pampering experience</span></div><a href="#"
+                            data-page="contact" class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-content">
+                        <h3>Premium Package</h3>
+                        <div class="price-tag">₹3099</div>
+                        <p>Premium Services + Spa</p>
+                        <div class="service-features"><span>Keratin/O3 Facial</span></div><a href="#"
+                            data-page="contact" class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-content">
+                        <h3>Luxury Package</h3>
+                        <div class="price-tag">₹5099</div>
+                        <p>Ultimate Bridal Experience</p>
+                        <div class="service-features"><span>Full bridal package + Mehendi</span></div><a href="#"
+                            data-page="contact" class="service-book-btn">Book Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY PAGE -->
+    <section id="gallery" class="page">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Our Glamorous Gallery</h2>
+                <p>Real transformations by Hello Beauticians</p>
+            </div>
+
+            <div class="gallery-filter reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hair">Hair Styling</button>
+                <button class="filter-btn" data-filter="makeup">Makeup</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="facial">Facial & Skin</button>
+                <button class="filter-btn" data-filter="nails">Nails & Mehendi</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Hair Category -->
+                <div class="gallery-item" data-category="hair"><img
+                        src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Hair Styling">
+                    <div class="gallery-overlay">
+                        <p>Hair Styling</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="hair"><img
+                        src="https://images.pexels.com/photos/3992860/pexels-photo-3992860.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Hair Color">
+                    <div class="gallery-overlay">
+                        <p>Hair Color</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="hair"><img
+                        src="https://images.pexels.com/photos/3992866/pexels-photo-3992866.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Hair Spa">
+                    <div class="gallery-overlay">
+                        <p>Hair Spa</p>
+                    </div>
+                </div>
+                <!-- Makeup Category -->
+                <div class="gallery-item" data-category="makeup"><img
+                        src="https://images.pexels.com/photos/3992128/pexels-photo-3992128.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Party Makeup">
+                    <div class="gallery-overlay">
+                        <p>Party Makeup</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="makeup"><img
+                        src="https://images.pexels.com/photos/3807737/pexels-photo-3807737.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Professional Makeup">
+                    <div class="gallery-overlay">
+                        <p>Professional Makeup</p>
+                    </div>
+                </div>
+                <!-- Bridal Category -->
+                <div class="gallery-item" data-category="bridal"><img
+                        src="https://images.pexels.com/photos/3783042/pexels-photo-3783042.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Bridal Makeup">
+                    <div class="gallery-overlay">
+                        <p>Bridal Makeup</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bridal"><img
+                        src="https://images.pexels.com/photos/4931964/pexels-photo-4931964.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Bridal Mehendi">
+                    <div class="gallery-overlay">
+                        <p>Bridal Mehendi</p>
+                    </div>
+                </div>
+                <!-- Facial Category -->
+                <div class="gallery-item" data-category="facial"><img
+                        src="https://images.pexels.com/photos/4065390/pexels-photo-4065390.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Facial Treatment">
+                    <div class="gallery-overlay">
+                        <p>Glow Facial</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facial"><img
+                        src="https://images.pexels.com/photos/3997836/pexels-photo-3997836.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Skin Care">
+                    <div class="gallery-overlay">
+                        <p>Skin Care</p>
+                    </div>
+                </div>
+                <!-- Nails Category -->
+                <div class="gallery-item" data-category="nails"><img
+                        src="https://images.pexels.com/photos/4813221/pexels-photo-4813221.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Manicure">
+                    <div class="gallery-overlay">
+                        <p>Manicure & Pedicure</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nails"><img
+                        src="https://images.pexels.com/photos/3783013/pexels-photo-3783013.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="Nail Art">
+                    <div class="gallery-overlay">
+                        <p>Nail Art</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS PAGE -->
+    <section id="testimonials" class="page">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by hundreds of women across Pune</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"I booked a bridal facial and makeup at home for my engagement. The beautician was punctual,
+                        professional, and the results were stunning!"</p>
+                    <h4>– Sneha Patil</h4>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Hair spa and manicure experience was amazing. They used disposable sheets and premium products.
+                        Absolutely hygienic and relaxing."</p>
+                    <h4>– Riya Deshmukh</h4>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Best decision to book Hello Beauticians for my wedding mehendi. The artist was creative and
+                        everyone loved the design. Thank you!"</p>
+                    <h4>– Anjali K.</h4>
+                </div>
+            </div>
+            <div class="follow-instagram"><a href="https://www.instagram.com/hellobeauticians.in/" target="_blank"
+                    class="btn-outline btn"><i class="fab fa-instagram"></i> Follow us
+                    @hellobeauticians.in</a></div>
+        </div>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="contact" class="page">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Book Your Appointment</h2>
+                <p>Easy booking, doorstep service, instant confirmation</p>
+            </div>
+            <div class="contact-flex">
+                <div class="contact-details reveal">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h3>Service Area</h3>
+                            <p>A2 Rohan Ananta, Opp JSPM College, Tathawade, Pune 411033</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h3>Call / WhatsApp</h3>
+                            <p><strong>+91 9209468527</strong></p><a href="https://wa.me/919209468527"
+                                class="whatsapp-link">Chat on WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hellobeauticians.in@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-box reveal">
+                    <form id="bookingForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="533feccf-6bdc-41aa-9f10-9736c50f2201">
+                        <div class="form-group"><input type="text" name="name" placeholder="Full Name" required></div>
+                        <div class="form-group"><input type="tel" name="phone" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="form-group"><select name="service">
+                                <option>Select Service/Package</option>
+                                <option>Hair Services</option>
+                                <option>Skin/Facial</option>
+                                <option>Bridal Makeup</option>
+                                <option>Mehendi</option>
+                                <option>Manicure/Pedicure</option>
+                                <option>Value Package (3 Services)</option>
+                                <option>Premium Package</option>
+                            </select></div>
+                        <div class="form-group"><textarea name="message" rows="3"
+                                placeholder="Preferred date, time & address"></textarea></div>
+                        <button type="submit" class="btn">Request Booking</button>
+                    </form>
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120990.84958156246!2d73.64356994113339!3d18.6206867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb91e497d237%3A0x90c355c5d133145f!2sRohan%20Ananta!5e0!3m2!1sen!2sin!4v1774087744515!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-circle"><img src="gallery/logo.jpg" alt="Hello Beauticians"></div>
+                    <p>Premium home salon services for women — safe, hygienic, expert.</p>
+                    <div class="social-links"><a href="https://www.instagram.com/hellobeauticians.in/"><i
+                                class="fab fa-instagram"></i></a><a
+                            href="https://www.facebook.com/profile.php?id=61582146356756"><i
+                                class="fab fa-facebook-f"></i></a><a href="https://www.youtube.com/@HelloBeauticians"><i
+                                class="fab fa-youtube"></i></a><a href="https://wa.me/919209468527"><i
+                                class="fab fa-whatsapp"></i></a></div>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="services">Services</a></li>
+                        <li><a href="#" data-page="packages">Packages</a></li>
+                        <li><a href="#" data-page="contact">Book Now</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p class="C"><i class="fas fa-phone-alt"></i> +91 9209468527</p>
+                    <p><i class="fas fa-envelope"></i> hellobeauticians.in@gmail.com</p><a href="#" data-page="contact"
+                        class="btn-appointment">Book Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Hello Beauticians — Trusted Home Salon for Women</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Slider functionality
+        const slides = document.querySelectorAll('.hero-slider .slide');
+        const dotsContainer = document.getElementById('sliderDots');
+        let currentSlide = 0, slideInterval;
+        function createDots() { if (dotsContainer) { dotsContainer.innerHTML = ''; slides.forEach((_, i) => { let dot = document.createElement('div'); dot.classList.add('slider-dot'); if (i === currentSlide) dot.classList.add('active'); dot.addEventListener('click', () => goToSlide(i)); dotsContainer.appendChild(dot); }); } }
+        function goToSlide(i) { slides[currentSlide].classList.remove('active'); currentSlide = (i + slides.length) % slides.length; slides[currentSlide].classList.add('active'); updateDots(); resetInterval(); }
+        function updateDots() { document.querySelectorAll('.slider-dot').forEach((dot, i) => { if (i === currentSlide) dot.classList.add('active'); else dot.classList.remove('active'); }); }
+        function nextSlide() { goToSlide(currentSlide + 1); }
+        function prevSlide() { goToSlide(currentSlide - 1); }
+        function resetInterval() { if (slideInterval) clearInterval(slideInterval); slideInterval = setInterval(nextSlide, 5000); }
+        document.getElementById('nextSlide')?.addEventListener('click', nextSlide);
+        document.getElementById('prevSlide')?.addEventListener('click', prevSlide);
+        if (slides.length) { createDots(); resetInterval(); document.getElementById('heroSlider')?.addEventListener('mouseenter', () => clearInterval(slideInterval)); document.getElementById('heroSlider')?.addEventListener('mouseleave', resetInterval); }
+
+        // Page navigation
+        const pages = document.querySelectorAll('.page');
+        function switchPage(pageId) { pages.forEach(p => p.classList.remove('active')); document.getElementById(pageId)?.classList.add('active'); window.scrollTo({ top: 0 }); if (window.innerWidth <= 850) document.getElementById('navbar')?.classList.remove('active'); document.querySelectorAll('nav a').forEach(link => { if (link.getAttribute('data-page') === pageId) link.classList.add('active-nav'); else link.classList.remove('active-nav'); }); if (pageId === 'home' && slides.length) resetInterval(); }
+        document.querySelectorAll('[data-page]').forEach(el => { if (el.tagName === 'A') el.addEventListener('click', (e) => { e.preventDefault(); const page = el.getAttribute('data-page'); if (page) switchPage(page); }); });
+        document.getElementById('menuToggle')?.addEventListener('click', () => document.getElementById('navbar')?.classList.toggle('active'));
+
+        // Reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        function checkReveal() { revealElements.forEach(el => { if (el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('active'); }); }
+        window.addEventListener('scroll', checkReveal); checkReveal();
+
+        // Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        document.querySelectorAll('.gallery-item').forEach(item => { item.addEventListener('click', () => { const img = item.querySelector('img').src; lightboxImg.src = img; lightbox.classList.add('active'); }); });
+        lightbox?.addEventListener('click', (e) => { if (e.target === lightbox || e.target.classList.contains('lightbox-close')) lightbox.classList.remove('active'); });
+
+        // UNIVERSAL FILTER (Gallery + Services)
+        const filterButtons = document.querySelectorAll('.filter-btn');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+
+                // Active button UI
+                btn.parentElement.querySelectorAll('.filter-btn')
+                    .forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                // Apply filter to BOTH gallery & services
+                document.querySelectorAll('.gallery-item, .service-card')
+                    .forEach(item => {
+                        const category = item.getAttribute('data-category');
+
+                        if (filter === 'all' || category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+            });
+        });
+
+        // Form handler
+        const form = document.getElementById('bookingForm');
+        if (form) { form.addEventListener('submit', async (e) => { e.preventDefault(); const btn = form.querySelector('button'), orig = btn.innerText; btn.innerText = 'Sending...'; btn.disabled = true; try { const fd = new FormData(form); const res = await fetch(form.action, { method: 'POST', body: fd }); const data = await res.json(); if (data.success) alert('✅ Booking request sent! We will call/WhatsApp within 2 hours.'); else alert('Please call 9209468527 to book directly.'); } catch (err) { alert('Error, please call us at 9209468527'); } finally { btn.innerText = orig; btn.disabled = false; } }); }
+    </script>
+</body>
+
+</html>
