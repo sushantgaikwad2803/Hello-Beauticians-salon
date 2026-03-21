@@ -150,14 +150,10 @@ header {
 
 .logo-circle {
     width: 5vw;
-    /* height: 60px; */
-    /* border-radius: 50%; */
     overflow: hidden;
-    /* background: linear-gradient(135deg, #ff9bb3, #ff6b8b); */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* box-shadow: 0 4px 12px rgba(255, 107, 139, 0.3); */
 }
 
 .logo-circle img {
@@ -1000,6 +996,7 @@ footer {
     
     .mobile-toggle {
         display: block;
+        margin-left: 65%;
     }
     
     nav.active ul {
@@ -1036,9 +1033,7 @@ footer {
     }
     
     .slider-arrow {
-        width: 36px;
-        height: 36px;
-        font-size: 1rem;
+       display: none;
     }
     
     .section-title h2 {
@@ -1135,8 +1130,7 @@ footer {
 
 @media (max-width: 480px) {
     .logo-circle {
-        width: 45px;
-        height: 45px;
+        width: 15vw;
     }
     
     .btn {
@@ -1145,7 +1139,7 @@ footer {
     }
     
     .hero-slider {
-        height: 60vh;
+        height: 82vh;
         min-height: 400px;
     }
     
@@ -1173,6 +1167,11 @@ footer {
         width: 48px;
         height: 48px;
         font-size: 1.2rem;
+    }
+
+    .footer-logo{
+        display: flex;
+        margin-left: 40%;
     }
 }
 
