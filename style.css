@@ -1004,6 +1004,12 @@ footer {
 
     .mobile-toggle {
         display: block;
+        order: 1; /* Push toggle to the right */
+    }
+
+    .logo {
+        order: 1; /* Keep logo on the left */
+        margin-right: 70%;
     }
 
     nav.active ul {
